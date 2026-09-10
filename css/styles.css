@@ -11050,8 +11050,6 @@ header.masthead h1, header.masthead .h1 {
             color: #333;
             cursor: pointer;
         }
-    </style>
-</head>
 
 /* ============================
    pop × シック 基本テーマ
@@ -11118,5 +11116,10 @@ a:hover {
 .slider-controls button:hover {
     color: #ff9f70;
 }
+
+    </style>
+</head>
+
+
 
 
