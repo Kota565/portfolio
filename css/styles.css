@@ -11136,6 +11136,11 @@ header.masthead h1 {
     color: #ff7f50 !important;
 }
 
+header.masthead.text-center.text-white {
+    background: none !important;
+    background-color: #f5f5f5 !important;
+}
+
 
     </style>
 </head>
