@@ -64,15 +64,50 @@
         <div id="portfolio">
             <div class="container-fluid p-0">
                 <div class="row g-0">
+                    
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="MazeRun">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                        <a class="portfolio-box" onclick="openModal('modal-maze')>
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="MazeRun" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">Action / Time Attack</div>
                                 <div class="project-name">MazeRun</div>
                             </div>
                         </a>
                     </div>
+
+                    <!-- MazeRun Modal -->
+<div id="modal-maze" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-maze')">&times;</span>
+
+        <!-- スクショスライド（仮） -->
+        <div class="slider">
+            <img src="assets/img/portfolio/fullsize/maze_1.jpg" class="slide active">
+            <img src="assets/img/portfolio/fullsize/maze_2.jpg" class="slide">
+            <img src="assets/img/portfolio/fullsize/maze_3.jpg" class="slide">
+        </div>
+
+        <div class="slider-controls">
+            <button class="prev-btn" onclick="prevSlide('modal-maze')">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide('modal-maze')">&#10095;</button>
+        </div>
+
+        <!-- 説明文（仮置き） -->
+        <div class="modal-description">
+            <h3>ゲームの詳細（仮）</h3>
+            <p>MazeRun は、ランダム生成される迷路を探索しながらコインを集め、能力を強化してタイムを縮めていく成長型タイムアタックゲームです。</p>
+
+            <h3>こだわった点（仮）</h3>
+            <p>迷路生成アルゴリズム、プレイヤーの操作感、強化システムのバランス調整に力を入れました。</p>
+
+            <h3>制作背景（仮）</h3>
+            <p>Unity を使った個人制作で、短時間で繰り返し遊べるゲームを目指して開発しました。</p>
+        </div>
+    </div>
+</div>
+
+
+                    
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Magic">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
@@ -82,9 +117,6 @@
                             </div>
                         </a>
                     </div>
-                
-                   
-                    
                     
                 </div>
             </div>
@@ -117,5 +149,33 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+function nextSlide(modalId) {
+    const modal = document.getElementById(modalId);
+    const slides = modal.querySelectorAll(".slide");
+    let index = [...slides].findIndex(s => s.classList.contains("active"));
+    slides[index].classList.remove("active");
+    slides[(index + 1) % slides.length].classList.add("active");
+}
+
+function prevSlide(modalId) {
+    const modal = document.getElementById(modalId);
+    const slides = modal.querySelectorAll(".slide");
+    let index = [...slides].findIndex(s => s.classList.contains("active"));
+    slides[index].classList.remove("active");
+    slides[(index - 1 + slides.length) % slides.length].classList.add("active");
+}
+</script>
+
+        
     </body>
 </html>
