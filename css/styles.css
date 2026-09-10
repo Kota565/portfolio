@@ -11075,6 +11075,11 @@ header.masthead h1 {
     color: #00aaff !important;
 }
 
+:root {
+  --bs-body-color: #1a1a2e !important; /* 冷たい濃紺 */
+  --bs-link-color: #00aaff !important; /* ポップな青 */
+  --bs-link-hover-color: #33cfff !important;
+}
 
 
     </style>
