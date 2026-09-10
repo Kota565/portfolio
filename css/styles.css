@@ -11250,6 +11250,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #00aaff !important;
 }
 
+body {
+    border: 10px solid red !important;
+}
+/* ============================
+   全テキストの色を強制上書き
+   ============================ */
+
+body, p, li, span, div, a, h1, h2, h3, h4, h5, h6 {
+    color: #1a1a2e !important; /* 冷たい濃紺 */
+}
+
+/* 白系を強制していたクラスを無効化 */
+.text-white,
+.text-white-50,
+.text-white-75,
+.text-white-100 {
+    color: #1a1a2e !important;
+}
+
+/* primary（青固定）を無効化してコウタの青に統一 */
+.text-primary {
+    color: #00aaff !important;
+}
 
 
 
