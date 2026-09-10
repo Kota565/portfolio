@@ -11202,6 +11202,11 @@ header.masthead h1 {
     );
     padding: 60px 0;
 }
+header.masthead h1,
+header.masthead .h1,
+header.masthead .text-white {
+    color: #00aaff !important;
+}
 
 
 
