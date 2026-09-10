@@ -11153,6 +11153,56 @@ header.masthead {
         rgba(0, 170, 255, 0.15)
     ) !important;
 }
+body {
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
+    color: #1a1a2e; /* 冷たい濃紺 */
+}
+p {
+    color: #1a1a2e; /* 本文：濃紺 */
+}
+
+h2 {
+    color: #0f2b46; /* セクションタイトル：深い青 */
+}
+
+h3 {
+    color: #00aaff; /* 小見出し：ポップな青 */
+}
+a {
+    color: #00aaff;
+}
+a:hover {
+    color: #33cfff;
+}
+
+.slider-controls button {
+    color: #00aaff;
+}
+.slider-controls button:hover {
+    color: #33cfff;
+}
+header.masthead {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 170, 255, 0.15),
+        rgba(0, 170, 255, 0.15)
+    ) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+header.masthead h1 {
+    color: #00aaff !important;
+}
+#about {
+    background: linear-gradient(
+        to bottom,
+        #f8f9fa,
+        #eef6ff
+    );
+    padding: 60px 0;
+}
+
 
 
     </style>
