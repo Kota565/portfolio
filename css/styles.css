@@ -11207,6 +11207,15 @@ header.masthead .h1,
 header.masthead .text-white {
     color: #00aaff !important;
 }
+header.masthead h1 {
+    color: #00aaff !important;
+}
+
+header.masthead p,
+header.masthead .text-white,
+header.masthead .text-white-75 {
+    color: #1a1a2e !important; /* 冷たい濃紺に統一 */
+}
 
 
 
