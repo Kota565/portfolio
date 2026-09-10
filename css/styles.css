@@ -11051,226 +11051,27 @@ header.masthead h1, header.masthead .h1 {
             cursor: pointer;
         }
 
-/* ============================
-   pop × シック 基本テーマ
-   ============================ */
-
-/* 背景をシックに */
 body {
-    background-color: #f5f5f5;
-    color: #333;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-/* タイトル（h1）をポップに */
-h1, .masthead h1 {
-    color: #00aaff;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-/* セクションタイトル（h2）をシックに */
-h2 {
-    color: #00aaff;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-/* リンクをポップに */
-a {
-    color: #00aaff;
-    text-decoration: none;
-}
-a:hover {
-    color: #33cfff;
-}
-
-/* ポートフォリオの枠をシックに */
-.portfolio-box {
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.portfolio-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-/* モーダルの中身をシックに */
-.modal-content {
-    background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-/* モーダルのタイトルをポップに */
-.modal-content h3 {
-    color: #00aaff;
-    margin-top: 20px;
-}
-
-/* ボタン（prev/next）をポップに */
-.slider-controls button {
-    color: #00aaff;
-}
-.slider-controls button:hover {
-    color: #33cfff;
-}
-
-/* ============================
-   masthead を pop × シックに上書き
-   ============================ */
-
-header.masthead {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 170, 255, 0.25),
-        rgba(0, 170, 255, 0.25)
-    ) !important;
-    background-position: center !important;
-    background-size: cover !important;
-}
-
-/* masthead のタイトル色をポップに */
-header.masthead h1 {
-    color: #00aaff !important;
-}
-
-header.masthead.text-center.text-white {
-    background: none !important;
-    background-color: #f5f5f5 !important;
-}
-
-/* masthead のタイトル色も強制上書き */
-header.masthead h1 {
-    color: #ff7f50 !important;
-}
-
-header.masthead {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 170, 255, 0.15),
-        rgba(0, 170, 255, 0.15)
-    ) !important;
-}
-body {
-    font-family: 'Inter', 'Noto Sans JP', sans-serif;
-    color: #1a1a2e; /* 冷たい濃紺 */
-}
-p {
-    color: #1a1a2e; /* 本文：濃紺 */
-}
-
-h2 {
-    color: #0f2b46; /* セクションタイトル：深い青 */
-}
-
-h3 {
-    color: #00aaff; /* 小見出し：ポップな青 */
-}
-a {
-    color: #00aaff;
-}
-a:hover {
-    color: #33cfff;
-}
-
-.slider-controls button {
-    color: #00aaff;
-}
-.slider-controls button:hover {
-    color: #33cfff;
-}
-header.masthead {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 170, 255, 0.15),
-        rgba(0, 170, 255, 0.15)
-    ) !important;
-    background-position: center !important;
-    background-size: cover !important;
-}
-
-header.masthead h1 {
-    color: #00aaff !important;
-}
-#about {
-    background: linear-gradient(
-        to bottom,
-        #f8f9fa,
-        #eef6ff
-    );
-    padding: 60px 0;
-}
-header.masthead h1,
-header.masthead .h1,
-header.masthead .text-white {
-    color: #00aaff !important;
-}
-header.masthead h1 {
-    color: #00aaff !important;
-}
-
-header.masthead p,
-header.masthead .text-white,
-header.masthead .text-white-75 {
-    color: #1a1a2e !important; /* 冷たい濃紺に統一 */
-}
-
-/* ============================
-   文字色を全て冷たいシックに統一
-   ============================ */
-
-/* 基本文字色（本文） */
-body, p, li, span, div {
     color: #1a1a2e !important; /* 冷たい濃紺 */
+    font-family: 'Inter', 'Noto Sans JP', sans-serif;
 }
 
-/* 見出し */
 h1, h2, h3, h4, h5, h6 {
     color: #00aaff !important; /* ポップな青 */
 }
 
-/* 白系を強制していたクラスを無効化 */
-.text-white,
-.text-white-50,
-.text-white-75,
-.text-white-100 {
-    color: #1a1a2e !important; /* 冷たい濃紺に統一 */
-}
-
-/* グレー系を強制していたクラスを無効化 */
-.text-muted,
-.text-black-50 {
+p, li, span, div {
     color: #1a1a2e !important;
 }
-
-/* primary（青固定）を無効化してコウタの青に統一 */
-.text-primary {
-    color: #00aaff !important;
+header.masthead {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 170, 255, 0.15),
+        rgba(0, 170, 255, 0.15)
+    ) !important;
 }
 
-body {
-    border: 10px solid red !important;
-}
-/* ============================
-   全テキストの色を強制上書き
-   ============================ */
-
-body, p, li, span, div, a, h1, h2, h3, h4, h5, h6 {
-    color: #1a1a2e !important; /* 冷たい濃紺 */
-}
-
-/* 白系を強制していたクラスを無効化 */
-.text-white,
-.text-white-50,
-.text-white-75,
-.text-white-100 {
-    color: #1a1a2e !important;
-}
-
-/* primary（青固定）を無効化してコウタの青に統一 */
-.text-primary {
+header.masthead h1 {
     color: #00aaff !important;
 }
 
