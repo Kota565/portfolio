@@ -11117,6 +11117,26 @@ a:hover {
     color: #ff9f70;
 }
 
+/* ============================
+   masthead を pop × シックに上書き
+   ============================ */
+
+header.masthead {
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 127, 80, 0.3),
+        rgba(255, 127, 80, 0.3)
+    ) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+/* masthead のタイトル色をポップに */
+header.masthead h1 {
+    color: #ff7f50 !important;
+}
+
+
     </style>
 </head>
 
