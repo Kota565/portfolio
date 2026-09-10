@@ -11217,6 +11217,40 @@ header.masthead .text-white-75 {
     color: #1a1a2e !important; /* 冷たい濃紺に統一 */
 }
 
+/* ============================
+   文字色を全て冷たいシックに統一
+   ============================ */
+
+/* 基本文字色（本文） */
+body, p, li, span, div {
+    color: #1a1a2e !important; /* 冷たい濃紺 */
+}
+
+/* 見出し */
+h1, h2, h3, h4, h5, h6 {
+    color: #00aaff !important; /* ポップな青 */
+}
+
+/* 白系を強制していたクラスを無効化 */
+.text-white,
+.text-white-50,
+.text-white-75,
+.text-white-100 {
+    color: #1a1a2e !important; /* 冷たい濃紺に統一 */
+}
+
+/* グレー系を強制していたクラスを無効化 */
+.text-muted,
+.text-black-50 {
+    color: #1a1a2e !important;
+}
+
+/* primary（青固定）を無効化してコウタの青に統一 */
+.text-primary {
+    color: #00aaff !important;
+}
+
+
 
 
     </style>
