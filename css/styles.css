@@ -11146,6 +11146,15 @@ header.masthead h1 {
     color: #ff7f50 !important;
 }
 
+header.masthead {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 170, 255, 0.15),
+        rgba(0, 170, 255, 0.15)
+    ) !important;
+}
+
+
     </style>
 </head>
 
