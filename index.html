@@ -109,7 +109,7 @@
 
                     
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Magic">
+                        <a class="portfolio-box" onclick="openModal('modal-magic')">
                             <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">2D Action</div>
@@ -117,6 +117,38 @@
                             </div>
                         </a>
                     </div>
+
+                    <!-- Magic Modal -->
+<div id="modal-magic" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal-magic')">&times;</span>
+
+        <!-- スクショスライド（仮） -->
+        <div class="slider">
+            <img src="assets/img/portfolio/fullsize/magic_4.jpg" class="slide active">
+            <img src="assets/img/portfolio/fullsize/magic_5.jpg" class="slide">
+            <img src="assets/img/portfolio/fullsize/magic_6.jpg" class="slide">
+        </div>
+
+        <div class="slider-controls">
+            <button class="prev-btn" onclick="prevSlide('modal-magic')">&#10094;</button>
+            <button class="next-btn" onclick="nextSlide('modal-magic')">&#10095;</button>
+        </div>
+
+        <!-- 説明文（仮置き） -->
+        <div class="modal-description">
+            <h3>ゲームの詳細（仮）</h3>
+            <p>Magic は、魔法を使って敵を倒しながら進む 2D アクションゲームです。シンプルな操作で爽快感を得られるように設計しています。</p>
+
+            <h3>こだわった点（仮）</h3>
+            <p>魔法のエフェクト、敵の動き、ステージ構成など、短時間で遊べる中でも気持ちよさを感じられるように調整しました。</p>
+
+            <h3>制作背景（仮）</h3>
+            <p>Unity の 2D アクション制作の練習として作成しました。プレイヤーの操作感と魔法の演出を重点的に作り込みました。</p>
+        </div>
+    </div>
+</div>
+
                     
                 </div>
             </div>
