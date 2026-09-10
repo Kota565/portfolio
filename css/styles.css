@@ -11141,6 +11141,10 @@ header.masthead.text-center.text-white {
     background-color: #f5f5f5 !important;
 }
 
+/* masthead のタイトル色も強制上書き */
+header.masthead h1 {
+    color: #ff7f50 !important;
+}
 
     </style>
 </head>
