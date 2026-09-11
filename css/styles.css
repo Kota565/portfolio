@@ -11081,6 +11081,37 @@ header.masthead h1 {
   --bs-link-hover-color: #33cfff !important;
 }
 
+/* 全テキストの色を強制上書き */
+body * {
+    color: #1a1a2e !important;
+}
+
+/* リンク */
+a {
+    color: #00aaff !important;
+}
+a:hover {
+    color: #33cfff !important;
+}
+
+/* masthead */
+header.masthead {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 170, 255, 0.15),
+        rgba(0, 170, 255, 0.15)
+    ) !important;
+}
+header.masthead h1 {
+    color: #00aaff !important;
+}
+
+/* Portfolio caption 背景 */
+#portfolio .portfolio-box-caption {
+    background: rgba(0, 170, 255, 0.15) !important;
+}
+
+
 
     </style>
 </head>
